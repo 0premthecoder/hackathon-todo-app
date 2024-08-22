@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Notos</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div id="notesContainer">
+    <nav id="do">
+      <nav><a>Search: </a><input type="text" id="search" placeholder="Searh Your Notes..."></nav>
+      <nav style="float: right; width: 20%;"><a>Add Note: </a> 
+        <button class="btn" id="add">+</button></nav>
+      </nav>
+  </div>
+  
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtn">&times;</span>
+    <h2>Add Note</h2>
+    <form id="modalForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" placeholder="Enter title">
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" placeholder="Enter description"></textarea>
+
+      <button type="button" id="submitBtn">Add Note</button>
+    </form>
+  </div></div>
+
+ 
+  <script src="script.js"></script>
+
+ </body>
+
+</html>
